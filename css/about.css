@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #f8faf7;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #164b2b;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #f5c542;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #f5c542;
+}
+
+/* Hero */
+.hero {
+    height: 300px;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 19px;
+}
+
+/* About */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 65px 8%;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #164b2b;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Mission and Vision */
+.mission-section {
+    display: flex;
+    gap: 25px;
+    padding: 30px 8% 60px;
+}
+
+.mission-card {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border-top: 5px solid #164b2b;
+}
+
+.mission-card h2 {
+    color: #164b2b;
+    margin-bottom: 12px;
+}
+
+/* Services */
+.services {
+    padding: 50px 8%;
+    background: #eaf2e9;
+    text-align: center;
+}
+
+.services h2 {
+    color: #164b2b;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    gap: 25px;
+}
+
+.service-card {
+    flex: 1;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+.service-card h3 {
+    color: #164b2b;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    background: #164b2b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .about-section,
+    .mission-section,
+    .service-container {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
